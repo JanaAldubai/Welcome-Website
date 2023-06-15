@@ -1,0 +1,28 @@
+input{
+border: 2px solid black;
+border-radius: 12px;
+width: 150px;
+height: 30px;
+
+}
+#form2{
+border: 2px solid #198754;
+border-radius: 12px;
+height: 150px;
+text-align: center;
+width: 300px;
+margin: 8vh auto 0 auto;
+padding: 20px;
+border-radius: 14px;
+font-size: 12px;
+}
+#error2{
+color: #ff3860;
+font-size: 14px;
+}
+.valid{
+border-color: #09c372;
+}
+.invalid{
+border-color: #ff3860;
+}

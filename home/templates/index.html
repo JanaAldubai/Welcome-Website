@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block title %} Home {% endblock %}
+
+{% block content %}
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero">
+
+    <div class="info d-flex align-items-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h2 data-aos="fade-down">Welcome to <span>MyPlants Website</span></h2>
+            <h3 style="color:white">Have a Look Around</h3>
+            <div>
+              <form id="form2" method="post">
+                  <div>
+                      <label style="color: white" data-aos="fade-up">Your Name: </label>
+                      <input id="name2" name="name" type="text"><br>
+                      <p id="error2"></p>
+                      <button type="submit" style="border-radius:50px; padding:6px 75px" data-aos="fade-up" data-aos-delay="200" class="btn btn-outline-success btn-rounded lg">Submit</button>
+                  </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+      <div class="carousel-item active" style="background-image: url({{ url_for('home.static', filename='images/img2.jpg') }})"></div>
+
+    </div>
+
+  </section><!-- End Hero Section -->
+  <main id="main">
+
+  </main><!-- End #main -->
+{% endblock %}
